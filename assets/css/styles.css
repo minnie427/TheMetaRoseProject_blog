@@ -499,6 +499,10 @@ transition: background .4s; /* for dark mode animation */
   color: var(--first-color);
 }
 
+.weekly h3{
+  color: hsl(322, 100%, 51%);
+}
+
 .weekly__info-title{
   font-family: var(--title-font);
   font-size: 2rem;
@@ -517,15 +521,15 @@ transition: background .4s; /* for dark mode animation */
 }
 
 .weekly a:link{
-  color: var(--text-color-light)
+  color: var(--text-color-light);
 }
 
 .weekly a:visited{
-  color: rgb(224, 108, 224)
+  color: rgb(255, 155, 212);
 }
 
 .weekly a:hover{
-  color: var(--first-color)
+  color: var(--first-color);
 }
 
 .weekly__info-description{
