@@ -11,7 +11,7 @@
   --first-color: hsl(322, 100%, 51%);
   --title-color: hsl(0, 0%, 11%);
   --text-color: hsl(207, 4%, 28%);
-  --text-color-light: hsl(0, 0%, 79%);
+ /*  --text-color-light: hsl(0, 0%, 79%); */
   --body-color: hsl(207, 4%, 99%);
   --body-color2: hsl(322, 100%, 51%);
   --body-color3: hsl(0, 0%, 69%);
@@ -53,8 +53,8 @@
     --h1-font-size: 2.5rem;
     --h2-font-size: 1.8rem;
     --h3-font-size: 1.3rem;
-    --normal-font-size: 1.7rem;
-    --small-font-size: 1.5rem;
+    --normal-font-size: 1.5rem;
+    --small-font-size: 1.3rem;
     --smaller-font-size: 1.3rem;
     --tiny-font-size: 1rem;
   }
@@ -503,7 +503,7 @@ transition: background .4s; /* for dark mode animation */
   font-family: var(--title-font);
   font-size: 2rem;
   font-weight: 500;
-  color: var(--text-color-light);
+  color: hsl(322, 100%, 51%);
   margin-bottom: 0.1rem;
 }
 
