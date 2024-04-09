@@ -141,10 +141,10 @@ body.dark-theme {
   background-color: hsl(0, 0%, 13%);
 }
 .dark-theme::-webkit-scrollbar-thumb{
-  background-color: hsl(141, 100%, 32%);
+  background-color: hsl(314, 100%, 32%);
 }
 .dark-theme::-webkit-scrollbar-thumb:hover{
-  background-color: hsl(141, 100%, 54%);
+  background-color: hsl(317, 100%, 54%);
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -529,7 +529,7 @@ transition: background .4s; /* for dark mode animation */
 }
 
 .weekly a:hover{
-  color: var(--first-color);
+  color: var(--first-color)
 }
 
 .weekly__info-description{
