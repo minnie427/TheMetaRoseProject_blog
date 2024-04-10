@@ -551,12 +551,16 @@ transition: background .4s; /* for dark mode animation */
   color: var(--text-color-light);
 }
 
+.weekly__text a:link{
+  color: rgb(255, 155, 212);
+}
+
 .weekly a:visited{
   color: rgb(255, 155, 212);
 }
 
 .weekly a:hover{
-  color: var(--first-color)
+  color: var(--first-color);
 }
 
 .weekly__info-description{
