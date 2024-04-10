@@ -69,6 +69,7 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
@@ -77,6 +78,7 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   transition: background .4s; /* for dark mode animation */
+  height: 100%;
 }
 
 h1, h2, h3 {
@@ -151,6 +153,7 @@ body.dark-theme {
 .container {
   max-width: 1024px;
   margin-inline: 1.5rem;
+  height: 100%;
 }
 
 .grid {
@@ -160,6 +163,7 @@ body.dark-theme {
 
 .section {
   padding-block: 2.5rem;
+    height: 100%;
 }
 
 .section__border {
@@ -488,11 +492,20 @@ transition: background .4s; /* for dark mode animation */
   row-gap: 4rem;
   padding-top: 2em;
   transition: background .4s; /* for dark mode animation */
+  height: 100%;
 }
 
 .weekly__info{
   display: grid;
   row-gap: 2rem;
+  height: 100%;
+  overflow: auto;
+  max-width: 100vw;
+}
+
+.weekly__text {
+  height: 100%;
+  overflow: auto;
 }
 
 .weekly .section__title{
@@ -510,6 +523,16 @@ transition: background .4s; /* for dark mode animation */
   color: hsl(322, 100%, 51%);
   margin-bottom: 0.1rem;
 }
+
+.weekly__info-title2{
+  font-family: var(--body-font);
+  font-size: var(--font-medium);
+  font-weight: 400;
+  color: var(--first-color);
+  margin-bottom: 0.1rem;
+}
+
+
 
 .weekly__info-title1{
   font-family: var(--title-font);
@@ -796,9 +819,10 @@ transition: background .4s; /* for dark mode animation */
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 340px){
+@media screen and (max-width: 327px){
   .container{
     margin-inline: 1rem;
+    
   }
   .nav__menu{
     padding-bottom: 4rem;
@@ -806,6 +830,16 @@ transition: background .4s; /* for dark mode animation */
   .nav__list{
     gap: 1rem 1.25rem
   }
+
+ .weekly__info {
+  overflow: auto;
+  max-width: 100vw;
+  height: 100%;
+ }
+
+ .weekly__text{
+  height: 100%;
+ }
 
   .weekly__img {
     width: 100vw;
