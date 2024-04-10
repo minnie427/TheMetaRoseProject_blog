@@ -245,7 +245,7 @@ body.dark-theme {
 }
 
 .nav__list{
-  grid-template-columns: repeat(3, max-content);
+  grid-template-columns: repeat(1, max-content);
   justify-content: center;
   gap: 2rem 3rem;
 }
@@ -261,7 +261,7 @@ body.dark-theme {
 }
 
 .nav__link:hover{
-  color: var(--title-color);
+  color: var(--first-color);
 }
 
 .nav__link i{
@@ -542,7 +542,7 @@ transition: background .4s; /* for dark mode animation */
 }
 
 .weekly__container img{
-  width: 100%;
+  width: 100vw;
  justify-content: center;
  margin-bottom: 1.5rem;
  margin-top: 1.5rem;
@@ -807,8 +807,8 @@ transition: background .4s; /* for dark mode animation */
     gap: 1rem 1.25rem
   }
 
-  .gallery__img {
-    width: 200px;
+  .weekly__img {
+    width: 100vw;
     justify-self: center;
   }
 }
