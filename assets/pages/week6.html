@@ -94,7 +94,7 @@
             <!--==================== Weekly documentation ====================-->
             <section class="weekly section" id="weekly">
                 <h2 class="section__title">WEEK 6</h2>
-                <span class="section__subtitle">BLOG</span>
+                 <span class="section__subtitle">1504 - 2104</span>
                 
                 <div class="weekly__container container grid section__border">
                 <div class="weekly__info">
@@ -103,6 +103,64 @@
                         <h3 class="weekly__info-title">
                             WORK PROGRESS</a>
                         </h3>
+                        <h3 class="about__info-title">
+                            Artwork 4: Unreal Game
+                         </h3> 
+                        <img src="../img/601.png" alt="photos">
+                        <img src="../img/604.png" alt="photos">
+                        <img src="../img/605.png" alt="photos">
+                        <img src="../img/602.png" alt="photos">
+                        <img src="../img/606.png" alt="photos">
+                        <img src="../img/607.png" alt="photos">
+                        <p>
+                            After creating the open world with PCG, I began by designing four spots within the map:
+                            <br><br>Arc Building
+                            <br>Mirrors
+                            <br>Cliff
+                            <br>Lake and the portal
+                            <br><br> I established the basic structure and placed major assets on the map. I ensured they were large enough for players to see them from afar at the starting point. These spots are located in the four corners of the map and feature different objects/actors for player interaction. The outcome of these interactions will either increase or decrease the health or energy bar.
+                            <br><br>
+                            With the basic map environment set up, I proceeded to implement an interaction system for the Random box and two types of roses.
+                        </p><br><br>
+                        <img src="../img/608.png" alt="photos">
+                        <p>
+                            The Randomness
+                            <br><br>
+                            The key concept of the interaction, and the entire environment, is randomness. The meta rose project's message revolves around life's unavoidable, unexpected, and inevitable thorns, such as a box of chocolates where you never know if your next piece will be sweet or bitter. However, you still have the choice of which aspect to highlight more.
+                            <br><br>To effectively convey the inevitability and unpredictability, randomness is integrated into the game's interaction system. Despite this randomness, players still have control over their health/energy bar, and the outcome of interactions depends on their choices.
+                        </p><br><br>
+                        <img src="../img/609.png" alt="photos">
+                        <p>
+                            The Random Box + Random Spawning
+                            <br><br>
+                            Once the game begins, I designed the random box to spawn randomly throughout the map, with a random number between 20 and 30. They have physics so they can be correctly placed on slopes or hills. When players approach and interact by pressing 'E', they animate to open, accompanied by a sound effect.
+                         </p><br><br>
+                         <img src="../img/610.png" alt="photos">
+                         <img src="../img/611.png" alt="photos">
+                         <img src="../img/612.png" alt="photos">
+                         <p>
+                            Two types of Roses + Weapon System
+                            <br><br>
+                            There are two types of roses: Pink and Chrome, which spawn randomly in terms of their total number in a box and the chances between the pink and the chrome. I scripted the chances of pink roses to be slightly higher than the chrome, hoping that this also holds true in the real world.
+                            <br><br>
+                            Once they spawn, players can pick them up by pressing 'E' to interact. Players can hold two roses: one in the back slot and one in the right hand as an active one. 
+                            <br><br>
+                            Once players pick up the roses, they can be used as weapons to shoot energy to either cause damage (with the Chrome rose) or to heal (with the Pink rose). The game is designed as multiplayer, allowing players to influence other players' health bars or NPCs'. After they are used to fire energy or bullets, players can drop them on the ground by pressing 'G'.
+                            <br><br>
+                            I’m attempting to make them destroyed once their bullets are out, but strangely it wasn’t working. It would be better if they get destroyed automatically so it’s obvious for the players that they need to pick up others and don’t have to drop them, which might seem confusing if they can't reload.
+                            I didn’t want them to be reloaded, as there are going to be a set number of roses available with the boxes throughout the map.
+                            </p><br><br>
+                            <img src="../img/613.png" alt="photos">
+                            <p>
+                            New Map/Level
+                            <br><br>
+                            I noticed that my FPS performance was really low and tried to find out why the GPU/CPU was spiking so much. The majority of the problems stemmed from the PCG, and the lighting and shadows were generated from it. 
+                            <br><br>  
+                            Additionally, the third-person player controller, or the movement of Mintie, became strange. Instead of moving forward, Mintie was almost flying into the air when she should have been walking. I spent a lot of time trying to solve it and discovered that it worked perfectly fine in a new normal map, not the open map I was using before, with the same player controller. So... I scrapped the map/level again and built a new one, reverting back to a normal level instead of an open world. Yes, I had to place all the assets, materials, and functions all over again.
+                            </p><br><br>
+
+
+
                         <h3 class="weekly__info-title">
                             INDUSTRY ENGAGEMENT
                         </h3>
