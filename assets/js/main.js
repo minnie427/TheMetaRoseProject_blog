@@ -69,16 +69,16 @@ const sendEmail = (e) =>{
 
     if(contactName.value ==='' || contactEmail.value === '' || contactProject.value === ''){
         //Adding and removing colours
-        contactMessage.classList.remove('color-green')
+        contactMessage.classList.remove('color-pink')
         contactMessage.classList.add('color-pink')
         //show message
         contactMessage.textContent = 'Please fill out all sections😎'
     }else{
         //serviceID - templateID - #form - publickey
-        emailjs.sendForm('service_egzkzek','template_l2xeqjn','#contact-form','2pC3FICmBjvfc6Rxw')
+        emailjs.sendForm('service_h5j3z1v','template_9b6tfl4','#contact-form','Cn9_aSVqOHEkWjZWO')
             .then(() =>{
                 //show message and add color
-                contactMessage.classList.add('color-green')
+                contactMessage.classList.add('color-pink')
                 contactMessage.textContent = 'Sent! Much appreciated👍🏻'
 
                 //remove message after five seconds
